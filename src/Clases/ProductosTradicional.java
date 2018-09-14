@@ -1,6 +1,6 @@
 package Clases;
 
-public class ProductosTradicional {
+public class ProductosTradicional extends Producto {
 
 	private String nombre;
 	private Float precio;

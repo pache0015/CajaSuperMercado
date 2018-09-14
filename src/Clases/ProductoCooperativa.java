@@ -1,9 +1,14 @@
 package Clases;
 
-public class ProductoCooperativa implements Producto{
+public class ProductoCooperativa extends Producto{
 
 	private String nombre;
 	private Float precio;
+	
+	public ProductoCooperativa(String unNombre, Float unPrecio) {
+		this.setNombre(unNombre);
+		this.setPrecio(unPrecio);
+	}
 	
 	public void setNombre(String unNombre) {
 		this.nombre =unNombre;

@@ -1,9 +1,20 @@
 package Clases;
 
-public interface Producto {
+public abstract class Producto {
 		
 	
-	public Float getPrecio();
-	public void setPrecio(Float unPrecio);
-	public void setNombre(String unNombre);
+	private String nombre;
+	private Float precio;
+	
+	
+	
+	public void setNombre(String unNombre) {
+		this.nombre =unNombre;
+	}
+	public void setPrecio(Float unPrecio) {
+		this.precio = unPrecio;
+	}
+	public Float getPrecio() {
+		return this.precio;
+	}
 }
