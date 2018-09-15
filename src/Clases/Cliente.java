@@ -7,7 +7,7 @@ public class Cliente {
 
 	private List<Producto> carro;
 	public Cliente(){
-		List<Producto>  carro = new ArrayList<Producto>();
+		carro = new ArrayList<Producto>();
 	}
 	
 	public void addCarro(Producto unProducto) {
