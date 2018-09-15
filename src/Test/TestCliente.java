@@ -2,13 +2,13 @@ package Test;
 import Clases.*;
 
 import static org.junit.Assert.assertEquals;
-import static org.junit.jupiter.api.Assertions.*;
+
 
 import org.junit.Before;
 import org.junit.jupiter.api.Test;
 
 
-class Testasvydas {
+class TestCliente {
 
 	private Cliente juan;
 	private ProductoCooperativa arroz;
