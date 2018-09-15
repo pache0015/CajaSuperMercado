@@ -1,12 +1,12 @@
 package Test;
+import Clases.*;
 
+import static org.junit.Assert.assertEquals;
 import static org.junit.jupiter.api.Assertions.*;
 
 import org.junit.Before;
 import org.junit.jupiter.api.Test;
 
-import Clases.ProductoCooperativa;
-import Clases.ProductosTradicional;
 
 class Testasvydas {
 
@@ -25,6 +25,8 @@ class Testasvydas {
 	void testCliente() {
 		juan.addCarro(arroz);
 		juan.addCarro(leche);
+		
+		assertEquals(false, juan.getCarro().isEmpty());
 	}
 
 }

@@ -1,5 +1,10 @@
 package Clases;
 
-public class Producto {
+public abstract class Producto {
 
+	protected abstract Float getPrecio() {
+		
+	}
+
+	
 }
