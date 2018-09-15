@@ -10,12 +10,14 @@ public class ProductoCooperativa extends Producto{
 		this.setPrecio(unPrecio);
 	}
 	
-	public void setNombre(String unNombre) {
+	private void setNombre(String unNombre) {
 		this.nombre =unNombre;
 	}
-	public void setPrecio(Float unPrecio) {
+	private void setPrecio(Float unPrecio) {
 		this.precio = unPrecio;
 	}
+	
+	
 	public Float getPrecio() {
 		return this.precio;
 	}
