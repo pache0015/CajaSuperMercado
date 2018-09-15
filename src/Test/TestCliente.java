@@ -17,8 +17,8 @@ class TestCliente {
 	@Before
 	void setUp() {
 		juan = new Cliente();
-		arroz = new ProductoCooperativa("Arroz", 10f);
-		leche = new ProductosTradicional("leche", 20f);
+		arroz = new ProductoCooperativa("Arroz", new Float(10));
+		leche = new ProductosTradicional("leche", new Float(20));
 	}
 	
 	@Test
@@ -26,7 +26,7 @@ class TestCliente {
 		juan.addCarro(arroz);
 		juan.addCarro(leche);
 		
-		assertEquals(false, juan.getCarro().isEmpty());
+		assert(juan.getCarro().isEmpty());
 	}
 
 }

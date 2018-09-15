@@ -1,7 +1,7 @@
 package Clases;
 
 public class Caja {
-	private Float monto;
+	private Float monto = new Float(0);
 	public Caja() {
 		
 	}

@@ -4,7 +4,7 @@ public class ProductosTradicional extends Producto {
 
 	private String nombre;
 	private Float precio;
-	private Float descuento = 10f;
+	private Float descuento = new Float(10);
 	
 	public ProductosTradicional(String unNombre, Float unPrecio){
 		this.setNombre(unNombre);

@@ -16,7 +16,9 @@ public class ProductoCooperativa extends Producto{
 	private void setPrecio(Float unPrecio) {
 		this.precio = unPrecio;
 	}
-	
+	public String getNombre() {
+		return this.nombre;
+	}
 	
 	public Float getPrecio() {
 		return this.precio;
