@@ -4,8 +4,6 @@ public abstract class Producto {
 	protected String nombre;
 	protected Float precio;
 	
-	
-	
 	protected void setNombre(String unNombre) {
 		this.nombre =unNombre;
 	}

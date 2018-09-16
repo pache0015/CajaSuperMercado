@@ -1,11 +1,11 @@
 package Clases;
 
-public class ProductosTradicional extends Producto {
+public class ProductosCooperativaa extends Producto {
 
 
 	private Float descuento = new Float(10);
 	
-	public ProductosTradicional(String unNombre, Float unPrecio){
+	public ProductosCooperativaa(String unNombre, Float unPrecio){
 		this.setNombre(unNombre);
 		this.setPrecio(unPrecio);
 	}

@@ -1,9 +1,9 @@
 package Clases;
 
 public class Caja {
-	private Float monto = new Float(0);
+	private Float monto;
 	public Caja() {
-		
+		monto  = new Float(0);
 	}
 	
 	public void cobrar(Cliente unCliente) {
