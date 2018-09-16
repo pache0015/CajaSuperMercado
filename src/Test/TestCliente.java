@@ -3,12 +3,9 @@ import Clases.*;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
-
-
 import org.junit.Before;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
 
 class TestCliente {
 
@@ -24,22 +21,16 @@ class TestCliente {
 		leche = new ProductoTradicionall("leche", new Float(20));
 		laCaja = new Caja();
 		
-		//juan.addCarro(arroz);
+		juan.addCarro(arroz);
 		juan.addCarro(leche);
-	}
-	
+	}	
 	@Test
 	void testCliente() {
-		
-		
 		assertFalse(juan.getCarro().isEmpty());
-		
-	}
-	
+		}	
 	@Test
-	void testCaja() {
-			
-		assertEquals(new Float(20), laCaja.cobrar(juan));
+	void testCaja() {			
+		assertEquals(new Float(29), laCaja.cobrar(juan));
 		
 	}
 

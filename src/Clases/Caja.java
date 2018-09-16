@@ -6,10 +6,11 @@ public class Caja {
 		monto  = new Float(0);
 	}
 	
-	public void cobrar(Cliente unCliente) {
+	public Float cobrar(Cliente unCliente) {
 		for(Producto producto : unCliente.getCarro()) {
 			monto += producto.getPrecio();
 			
 		}
+		return monto;
 	}
 }
