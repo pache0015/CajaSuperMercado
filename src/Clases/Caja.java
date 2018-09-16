@@ -9,6 +9,7 @@ public class Caja {
 	public void cobrar(Cliente unCliente) {
 		for(Producto producto : unCliente.getCarro()) {
 			monto += producto.getPrecio();
+			
 		}
 	}
 }

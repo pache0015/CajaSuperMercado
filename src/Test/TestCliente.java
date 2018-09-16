@@ -2,9 +2,10 @@ package Test;
 import Clases.*;
 
 import static org.junit.Assert.assertEquals;
-
+import static org.junit.Assert.assertFalse;
 
 import org.junit.Before;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 
@@ -14,7 +15,7 @@ class TestCliente {
 	private ProductoCooperativa arroz;
 	private ProductosTradicional leche;
 	
-	@Before
+	@BeforeEach
 	void setUp() {
 		juan = new Cliente();
 		arroz = new ProductoCooperativa("Arroz", new Float(10));
@@ -26,7 +27,7 @@ class TestCliente {
 		juan.addCarro(arroz);
 		juan.addCarro(leche);
 		
-		assert(juan.getCarro().isEmpty());
+		assertFalse(juan.getCarro().isEmpty());
 	}
 
 }
